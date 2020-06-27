@@ -1,12 +1,14 @@
-all: readme.md
+all: README.md
 
-readme.md:
-	echo "#Project: Guessing game for unix workbench course" > readme.md
-	echo "##Time of build: " >> readme.md
-	date >> readme.md
-	echo "##Number of Lines in guessing game code: " >> readme.md
-	wc -l guessinggame.sh >> readme.md
+README.md:
+	echo "#Project: Guessing game for unix workbench course\n" > README.md
+	echo "##Time of build\n" >> README.md
+	date >> README.md
+	echo "\n"
+	echo "##Number of Lines in guessing game code: \n" >> README.md
+	wc -l guessinggame.sh >> README.md
+	echo "\n"
 
 clean:
-	rm readme.md
+	rm README.md
 
